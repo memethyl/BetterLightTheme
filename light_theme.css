@@ -66,28 +66,28 @@ div[class="guild selected unread"] a {
 /* 
     text channel CSS
 */
-/* muted/unread/normal channel name colors */
-div[class*="nameMutedText"] {
+/* muted/unread/normal channel name/category colors */
+div[class*="nameMutedText"],div[class*="nameMuted"] {
     color:#e3e3e3 !important;
 }
 div[class*="nameUnreadText"] {
     color:#000 !important;
 }
-div[class*="nameDefaultText"] {
+div[class*="nameDefaultText"],div[class*="nameDefault"] {
     color:#b0b0b0 !important;
 }
 div[class*="contentUnreadText"]:hover > div[class*="nameUnreadText"] {
     color:#dddddd !important;
 }
 /* text channel hover color */
-div[class*="wrapper-"]:hover > div[class*="content-"]:not(div[class*="userSelectNone"]) {
+div[class*="wrapper-"]:hover > div[class*="content-"] {
     background-color:#808388;
 }
 /* text channel name hover color */
 div[class*="wrapper-"]:hover > div[class*="content-"] > div[class*="name"] {
     color:#ffffff !important;
 }
-/* channel icons on the right */
+/* text channel invite/settings icons */
 div[class*="wrapperSelectedText"] > div > div > div > svg > path {
     fill: #fff;
 }
@@ -104,9 +104,12 @@ div[class="layer"] > div > div > div > div {
 }
 
 
+
+
 /* 
     voice channel CSS
 */
+/* voice channel text/hover colors */
 div[class*="contentDefaultVoice"] div[class*="wrapper"] {
     background-color:#d3d3d3;
 }
@@ -119,8 +122,25 @@ div[class*="contentSelectedVoice"]:hover > div[class*="nameSelectedVoice"] {
 div[class*="nameSelectedVoice"] {
     color:#707378;
 }
+/* forgot what this is for tbh */
 a[class*="channel-"] {
     color:#fff;
+}
+/* voice channel invite/settings icons */
+div[class*="wrapperSelectedVoice"] > div > div > div > svg > path {
+    fill: #fff;
+}
+div[class*="wrapperHoveredVoice"]:hover > div > div > div > svg > path {
+    fill: #fff;
+}
+/* "voice connected" tab */
+div[class*="channels-"] > div:nth-of-type(2) {
+    margin-bottom:-1px;
+    background-color:#bdbdbd !important;
+}
+div[class*="channels-"] > div:nth-of-type(2) > div > a {
+    color:#fff !important;
+    filter: brightness(0);
 }
 
 
