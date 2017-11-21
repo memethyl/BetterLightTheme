@@ -5,9 +5,9 @@
 .guilds-wrapper {
     background-color:#ccc;
 }
-div[class*="channels-"] > div[style="flex: 1 1 auto;"] {
+/* channel/DM list background colors */
+div[class*='themeGhostHairlineChannels'] {
     background-color:#f3f3f3;
-
 }
 div[class="private-channels"] {
     background-color:#f3f3f3;
@@ -22,7 +22,7 @@ div[class*="channels-"] > div[class*="container-"] {
 }
 /* name/discrim bar text color */
 div[class*="accountDetails-"] > span[class="username"] {
-    color:# !important;
+    color:#36393E !important;
 }
 div[class*="accountDetails-"] > span[class="discriminator"] {
     color:#fff !important;
@@ -43,6 +43,10 @@ svg[class="dropdown-button open"] path[stroke="#FFF"] {
 button[class="guild guilds-add"] {
     background-color:#a0a3a8 !important;
 }
+/* "download apps" text at the bottom */
+button[class="btn-download-apps"] {
+    color:#36393E !important;
+}
 /* color of the DM button at the top of the guild list */
 a[class=""] {
     background-color:#a0a3a8;
@@ -56,6 +60,10 @@ div[class="guild unread"] a {
 }
 div[class="guild selected unread"] a {
     background-color:#dadada;
+}
+/* removing that weird shadow at the top of the guild list */
+.unread-mentions-indicator-bottom, .unread-mentions-indicator-top {
+    padding:0px;
 }
 
 
@@ -126,7 +134,7 @@ a[class*="channel-"] {
 div[class*="private"]:hover > a[href*="/channels/@me/"] {
     background-color:#909090 !important;
 }
-/* DM hovering */
+/* DM channel colors */
 div[class="channel private"] > a > span {
     color:#333 !important;
 }
