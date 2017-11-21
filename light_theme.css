@@ -1,0 +1,198 @@
+/* 
+    guild CSS
+*/
+/* guild/channel/DM list background colors */
+.guilds-wrapper {
+    background-color:#ccc;
+}
+div[class*="channels-"] > div[style="flex: 1 1 auto;"] {
+    background-color:#f3f3f3;
+
+}
+div[class="private-channels"] {
+    background-color:#f3f3f3;
+}
+/* server title color */
+header {
+    color:#333 !important;
+}
+/* name/discrim bar color */
+div[class*="channels-"] > div[class*="container-"] {
+    background-color:#ccc !important;
+}
+/* name/discrim bar text color */
+div[class*="accountDetails-"] > span[class="username"] {
+    color:# !important;
+}
+div[class*="accountDetails-"] > span[class="discriminator"] {
+    color:#fff !important;
+    filter: brightness(0);
+}
+/* forgot what this is for tbh */
+span[class*="name-"] {
+    color:#36393E;
+}
+/* that little arrow next to the server title */
+svg[class="dropdown-button"] path[stroke="#FFF"] {
+    stroke:#36393E;
+}
+svg[class="dropdown-button open"] path[stroke="#FFF"] {
+    stroke:#36363E;
+}
+/* "add a server" button at the bottom */
+button[class="guild guilds-add"] {
+    background-color:#a0a3a8 !important;
+}
+/* color of the DM button at the top of the guild list */
+a[class=""] {
+    background-color:#a0a3a8;
+}
+/* guild icon background colors */
+div[class="guild"] a {
+    background-color:#dadada;
+}
+div[class="guild unread"] a {
+    background-color:#dadada;
+}
+div[class="guild selected unread"] a {
+    background-color:#dadada;
+}
+
+
+/* 
+    text channel CSS
+*/
+/* muted/unread/normal channel name colors */
+div[class*="nameMutedText"] {
+    color:#e3e3e3 !important;
+}
+div[class*="nameUnreadText"] {
+    color:#000 !important;
+}
+div[class*="nameDefaultText"] {
+    color:#b0b0b0 !important;
+}
+div[class*="contentUnreadText"]:hover > div[class*="nameUnreadText"] {
+    color:#dddddd !important;
+}
+/* text channel hover color */
+div[class*="wrapper-"]:hover > div[class*="content-"]:not(div[class*="userSelectNone"]) {
+    background-color:#808388;
+}
+/* text channel name hover color */
+div[class*="wrapper-"]:hover > div[class*="content-"] > div[class*="name"] {
+    color:#ffffff !important;
+}
+/* channel icons on the right */
+div[class*="wrapperSelectedText"] > div > div > div > svg > path {
+    fill: #fff;
+}
+div[class*="wrapperHoveredText"]:hover > div > div > div > svg > path {
+    fill: #fff;
+}
+/* removing those annoying rounded corners on the channel list */
+div[class="layer"] > div > div {
+    border-radius:0px;
+}
+/* removing that weird thin bar below the username/discrim bar */
+div[class="layer"] > div > div > div > div {
+    margin-bottom:-1px;
+}
+
+
+/* 
+    voice channel CSS
+*/
+div[class*="contentDefaultVoice"] div[class*="wrapper"] {
+    background-color:#d3d3d3;
+}
+div[class*="contentSelectedVoice"] div[class*="wrapper"] {
+    background-color:#b3b3b3;
+}
+div[class*="contentSelectedVoice"]:hover > div[class*="nameSelectedVoice"] {
+    color:#fff;
+}
+div[class*="nameSelectedVoice"] {
+    color:#707378;
+}
+a[class*="channel-"] {
+    color:#fff;
+}
+
+
+/* 
+    direct messaging CSS
+*/
+div[class*="private"]:hover > a[href*="/channels/@me/"] {
+    background-color:#909090 !important;
+}
+/* DM hovering */
+div[class="channel private"] > a > span {
+    color:#333 !important;
+}
+div[class="channel private"]:hover > a > span {
+    color:#fff !important;
+}
+div[class="channel private"] > a > div {
+    color:#333 !important;
+}
+div[class="channel private"]:hover > a > div {
+    color:#fff !important;
+}
+div[class="channel selected private"] > a > div > div {
+    color:#fff !important;
+}
+div[class="channel selected private"] a {
+    background-color:#b3b3b3 !important;
+}
+/* that "friends" tab in DMs */
+div[class="channel btn-friends"]:hover a {
+    background-color:#b3b3b3 !important;
+}
+div[class="channel btn-friends"] > a > div {
+    color:#333 !important;
+}
+div[class="channel btn-friends"]:hover > a > div {
+    color:#fff !important;
+}
+svg[name="PersonWaving"] path[fill="currentColor"] {
+   fill:#36393E;
+}
+/* colors for the DM search bar + its placeholder text */
+div[class="search-bar"] {
+    background-color:#ccc !important;
+}
+div[class="search-bar"] > div > input::placeholder {
+    color:#ddd;
+}
+
+
+/* 
+    that thing on top of the desktop window
+*/
+div[class*="titleBar-"] {
+    background-color:#f3f3f3;
+}
+svg[name="DiscordWordmark"] path {
+   fill:#606368;
+}
+svg[name="TitleBarClose"] polygon {
+    fill:#606368;
+}
+svg[name="TitleBarMaximize"] rect {
+    stroke:#606368;
+}
+svg[name="TitleBarMinimize"] rect {
+    fill:#606368;
+}
+
+
+/* 
+    miscellaneous shit
+*/
+svg[name="Gear"] path {
+    fill:#feffff;
+}
+div[class*="iconSpacing"] svg > path {
+    fill:#555555;
+}
