@@ -122,6 +122,9 @@ div[class*="contentSelectedVoice"]:hover > div[class*="nameSelectedVoice"] {
 div[class*="nameSelectedVoice"] {
     color:#707378;
 }
+div[class*="nameLockedVoice"] {
+    color:#d3d3d3;
+}
 /* forgot what this is for tbh */
 a[class*="channel-"] {
     color:#fff;
