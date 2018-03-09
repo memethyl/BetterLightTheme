@@ -10,7 +10,7 @@
     padding: 0px;
 }
 /* color of the DM button at the top of the guild list */
-div.guilds.scroller > div:nth-of-type(1) > div > a {
+div.guilds.scroller > div:first-of-type > div > a {
 	background-color: #a0a3a8;
 }
 /* guild icon background colors */
@@ -34,13 +34,14 @@ div.friends-online {
 	channel list next to the server list
 */
 /* server name bar colors */
-header[class*="header"] {
+div[class*="channels"] > div > div > div > header {
 	background-color: #ccc;
 	color: #333;
 	z-index: 0;
 }
-header[class*="header"]:hover, .popout-open header {
-	background-color: #bbb;
+div[class*="channels"] > div > div > div > header:hover, div.popout-open header {
+	background-color: #bbb !important;
+	color: #fff !important;
 }
 /* channel/DM list background colors */
 div[class*="themeGhostHairlineChannels"], div.private-channels {
@@ -93,7 +94,7 @@ div.layer > div > div > div > div {
 	margin-bottom: -1px;
 }
 /* removing the rounded edges above/below the channel list */
-div[class*="theme-light"] > div > div > div > div {
+div.app > div.flex-spacer > div[class*="layer"] > div > div:nth-of-type(2) {
 	border-radius: 0px;
 }
 /* fixes the # symbols next to muted/selected channels */
@@ -234,10 +235,10 @@ div[class*="private"]:hover > a[href*="/channels/@me/"] {
 }
 /* fixing the mutual server icons in friends tab */
 div.friends-column.friends-column-guilds > a {
-	background-color: #fff;
+	background-color: #eee;
 }
 div.friends-row:hover > div.friends-column.friends-column-guilds > a {
-	background-color: #ebeef0;
+	background-color: #dee1e3;
 }
 /* color tweak for the "Direct Messages" text above DM channels */
 div.private-channels header {
@@ -246,9 +247,20 @@ div.private-channels header {
 /* DM search bar */
 div.private-channels > div.search-bar {
 	background-color: #ccc !important;
+	box-shadow: none;
 }
 div.private-channels > div.search-bar input::-webkit-input-placeholder {
 	color: #ddd;
+}
+/* friends list background color */
+div#friends > div.friends-table {
+    background-color: #eee;
+    margin-top: 0px;
+}
+/* background color for the tab above the friends list */
+div#friends > div:first-of-type {
+    background-color: #e6e6e6;
+    z-index: 0;
 }
 
 
