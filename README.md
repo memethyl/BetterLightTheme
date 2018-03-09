@@ -12,4 +12,4 @@ Normal Discord light theme:
 Light theme with BetterLightTheme:
 ======
 ![BetterLightTheme, looking at a server](https://i.imgur.com/yjyFYaJ.png)
-![BetterLightTheme, looking at friends list](https://i.imgur.com/BWR8PUE.png)
+![BetterLightTheme, looking at friends list](https://i.imgur.com/duYqV6a.png)
